@@ -26,7 +26,6 @@ while True:
     if not isTrue: # Se não tiver mais frames, encerra o playback
         break
     
-    # Escreve o frame no output se tiverem pessoas na imagem
     person = False # Variável que recebe se tem pessoas na imagem
     for result in results: # Para cada resultado
             for box in result.boxes.cpu().numpy(): # Para cada box na imagem
